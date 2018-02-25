@@ -10,10 +10,11 @@ function getRandomQuote(json) {
     linkQuote = quote.split(" ").join("+");
     linkMovie = movie.split(" ").join("");
     console.log(linkQuote, linkMovie);
+    var twitterLink = "https://twitter.com/intent/tweet?text=\"" +
+    linkQuote + "\"%20%20%20&hashtags=" + linkMovie + ",freeCodeCamp" +
+    ",FrontEndWebDev"
     $("#tweet-quote").attr("disabled", false);
-    $("#tweet-link").attr("href", "https://twitter.com/intent/tweet?text=\"" +
-        linkQuote + "\"%20%20%20&hashtags=" + linkMovie + ",freeCodeCamp" +
-        ",FrontEndWebDev");
+    $("#tweet-link").attr("href", twitterLink);
 }
 
 function getQuote() {

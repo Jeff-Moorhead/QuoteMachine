@@ -6,10 +6,6 @@ body {
   padding: 50px;
 }
 
-.container-fluid {
-  margin: auto;
-}
-
 .well {
   background-color: #DDDDDD;
   color: #001f3f;

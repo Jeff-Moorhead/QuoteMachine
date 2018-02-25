@@ -6,8 +6,8 @@ body {
   padding: 50px;
 }
 
-.row { 
-  text-align: center;
+.container-fluid {
+  margin: auto;
 }
 
 .well {
@@ -16,6 +16,7 @@ body {
   width: 900px;
   height: 600px;
   padding: 50px;
+  margin: auto;
   text-align: center;
   border-radius: 3%;
 }

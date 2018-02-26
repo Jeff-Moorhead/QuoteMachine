@@ -12,7 +12,8 @@ body {
   width: 900px;
   height: 600px;
   padding: 50px;
-  margin: auto;
+  margin: 0 auto;
+  float: none;
   text-align: center;
   border-radius: 3%;
 }

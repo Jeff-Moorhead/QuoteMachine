@@ -1,11 +1,11 @@
 var quote;
 var movie;
+var currentIndex = Math.floor(Math.random() * quotes.length);
 
-function getRandomQuote(json) {
-    var index = Math.floor(Math.random() * json.quotes.length);
-    console.log(index);
-    quote = json.quotes[index].quote;
-    movie = json.quotes[index].movie;
+function getRandomQuote() {
+    console.log(currentIndex);
+    quote = quotes[currentIndex].quote;
+    movie = quotes[currentIndex].movie;
     console.log(quote);
     linkQuote = quote.split(" ").join("+");
     linkMovie = movie.split(" ").join("");
@@ -15,10 +15,17 @@ function getRandomQuote(json) {
     ",FrontEndWebDev"
     $("#tweet-quote").attr("disabled", false);
     $("#tweet-link").attr("href", twitterLink);
+    var newIndex = Math.floor(Math.random() * quotes.length);
+    if (newIndex != currentIndex) {
+        currentIndex = newIndex;
+    }
+    else {
+        newIndex = Math.floor(Math.random() * quotes.length);
+    }
 }
 
 function getQuote() {
-    $.getJSON("quotes.json", getRandomQuote);
+    getRandomQuote();
     $(".quote").fadeOut(1000, function () {
         $(".quote").html("\"" + quote + "\"");
         $(this).fadeIn(1000);

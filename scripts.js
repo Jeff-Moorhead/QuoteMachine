@@ -18,6 +18,7 @@ function getRandomQuote() {
     var newIndex = Math.floor(Math.random() * quotes.length);
     if (newIndex != currentIndex) {
         currentIndex = newIndex;
+        console.log(newIndex);
     }
     else {
         newIndex = Math.floor(Math.random() * quotes.length);

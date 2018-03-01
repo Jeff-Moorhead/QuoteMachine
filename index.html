@@ -9,8 +9,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <style>
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+    $("body").hide();
+    $("body").fadeIn(1000);
+  });
+  </script>
 </head>
 
 <body>
@@ -21,7 +26,7 @@
       </h1>
       <div class="quote">Click for an AFI Top 100 movie quote!</div>
       <div class="movie">- </div>
-      <button type="button" title="Get a new quote" id="get-quote" class="btn btn-basic">Get a quote!</button>
+      <button type="button" onclick="getQuote()" title="Get a new quote" id="get-quote" class="btn btn-basic">Get a quote!</button>
       <br>
       <a id="tweet-link" target="_blank" href="">
         <button type="submit" title="Tweet this quote" id="tweet-quote" class="btn btn-basic" disabled>
@@ -33,7 +38,6 @@
 
   <!-- JavaScript -->
   <script src="quotes.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 

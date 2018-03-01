@@ -41,10 +41,10 @@ function getQuote() {
         $(this).fadeIn(1000);
     })
     console.log(quote, movie);
-}
+};
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     $("body").hide();
     $("body").fadeIn(1000);
     $("#get-quote").on("click", getQuote);
-});
+*/

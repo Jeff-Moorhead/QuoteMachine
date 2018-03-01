@@ -13,7 +13,6 @@ function getRandomQuote() {
     var twitterLink = "https://twitter.com/intent/tweet?text=\"" +
     linkQuote + "\"%20%20%20&hashtags=" + linkMovie + ",freeCodeCamp" +
     ",FrontEndWebDev"
-    $("#tweet-quote").attr("disabled", false);
     $("#tweet-link").attr("href", twitterLink);
     var newIndex = Math.floor(Math.random() * quotes.length);
     if (newIndex != currentIndex) {
@@ -40,6 +39,7 @@ function getQuote() {
     $(".btn-basic").fadeOut(1000, function () {
         $(this).fadeIn(1000);
     })
+    $("#tweet-quote").attr("disabled", false);
     console.log(quote, movie);
 };
 

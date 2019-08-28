@@ -1,0 +1,2 @@
+# QuoteMachine
+I built this quote machine as part a front-end development course I took at Drew University. This application uses jQuery and Bootstrap to generate a random quotation from a list of 100 possible quotes and format it nicely for the user to see. The app also makes use of the Twitter API to allow users to tweet a quote for their followers to see. Each quote available is taken from the American Film Institute's top 100 movie quotes. 
